@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Chicken.js Demo</title>
+</head>
+
+<body id="home">
+
+    <a id="a" href="#">Click Me!</a> or <a id="b" href="#">Click Me!</a>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./chicken.js"></script>
+
+    <script>
+      $('#a').on('cluck', function(e) {
+        e.preventDefault();
+        alert('It worked!');
+      });
+      $('#b').cluck(function(e) {
+        e.preventDefault();
+        alert('It worked!');
+      });
+    </script>
+
+</body>
+</html>
